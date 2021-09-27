@@ -1,0 +1,32 @@
+@model ClienteModel
+@{
+    ViewData["Title"] = "Registrar";
+}
+
+ @using (Html.BeginForm("Registrar", "Cliente", FormMethod.Post))
+{
+  <div class="form-group">
+    <label for="cpf_cli">CPF</label>
+    <input type="number" class="form-control" name="cpf_cli" id="cpf_cli" aria-describedby="CPF" placeholder="0000000000">
+  </div>
+  <div class="form-group">
+    <label for="nome_cli">Nome</label>
+    <input type="text" name="nome_cli" class="form-control" id="nome_cli" placeholder="José Arnaldo Pereira">
+  </div>
+  <div class="form-group">
+    <label for="telefone_cli">Telefone</label>
+    <input type="text" name="telefone_cli" class="form-control" id="telefone_cli" placeholder="9999-9999">
+  </div>
+  <div class="form-group">
+    <label for="email_cli">Email</label>
+    <input type="email" name="email_cli" class="form-control" id="email_cli" placeholder="jose@email.com">
+  </div>
+  
+    <div class="form-group">
+    <label for="cep_end">CEP</label>
+    <input type="number" name="cep_end" class="form-control" id="cep_end" placeholder="99999999">
+  </div>
+  
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+}

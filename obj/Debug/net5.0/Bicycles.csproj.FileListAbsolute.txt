@@ -41,3 +41,5 @@
 /home/joaodemutti/Work/Bicycles/bin/Debug/net5.0/MySql.Data.dll
 /home/joaodemutti/Work/Bicycles/obj/Debug/net5.0/Razor/Views/Cliente/Index.cshtml.g.cs
 /home/joaodemutti/Work/Bicycles/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
+/home/joaodemutti/Work/Bicycles/obj/Debug/net5.0/Razor/Views/Cliente/Registrar.cshtml.g.cs
+/home/joaodemutti/Work/Bicycles/obj/Debug/net5.0/Razor/Views/Cliente/Consulta.cshtml.g.cs

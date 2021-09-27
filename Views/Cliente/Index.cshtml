@@ -1,10 +1,31 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Client Page";
 }
 
 <div class="text-center">
     <h2 class="display-4">Os clientes da Bicyclessipe</h1>
 </div>
 
-
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nome</th>
+      <th scope="col">CPF</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+@foreach (var item in Bicycles.Controllers.ClienteController.clientes.Select((client ,i)=>new{i,client }))
+{
+      <tr>
+      <th scope="row">@item.i</th>
+      <td>@item.client.nome_cli</td>
+      <td>@item.client.cpf_cli</td>
+      <td>@item.client.email_cli</td>
+    </tr>
+  
+}
+</tbody>
+</table> 
 

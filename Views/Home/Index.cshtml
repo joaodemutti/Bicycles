@@ -6,12 +6,37 @@
     <h2 class="display-4">Bem vindo a Bicyclessipe</h1>
 </div>
 
-<ul class="list-group">
-  <li class="list-group-item"><h3>Clientes</h3></li>
-  <li class="list-group-item">Registrar</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item"><a class="text-dark" asp-area="" asp-controller="Cliente" asp-action="Index">cliente</a></li>
+<br>
+
+  <ul class="list-group ">
+    <li class="list-group-item"><h3><a class="text-dark" asp-area="" asp-controller="Locacao" asp-action="Index">Locações</a></h3></li>
+    <li class="list-group-item"><a class="text-dark" asp-area="" asp-controller="Locacao" asp-action="Registrar">Registrar</a></li>
+  </ul>
+  <br>
+<ul class="list-group ">
+  <li class="list-group-item"><h3><a class="text-dark" asp-area="" asp-controller="Cliente" asp-action="Index">Clientes</a></h3></li>
+  <li class="list-group-item"><a class="text-dark" asp-area="" asp-controller="Cliente" asp-action="Registrar">Registrar</a></li>
+  <li class="list-group-item">@using (Html.BeginForm("Consulta", "Cliente", FormMethod.Post))
+{
+  <div class="container">
+<div class="row">
+<input type="number" class="form-control col-sm-7" id="cpf" name="cpf" aria-describedby="cpf" placeholder="Insira o CPF">
+    <div class="col-sm-1"></div>
+    <input type="submit" value="Consulta" class="col-sm-2"/>
+ </div> 
+  </div>
+ 
+}</li>
+</ul>
+<br>
+  <ul class="list-group ">
+    <li class="list-group-item"><h3><a class="text-dark" asp-area="" asp-controller="Bike" asp-action="Index">Bicicletas</a></h3></li>
+  <li class="list-group-item"><a class="text-dark" asp-area="" asp-controller="Bike" asp-action="Registrar">Registrar</a></li>
+</ul>
+<br>
+<ul class="list-group ">
+  <li class="list-group-item"><h3><a class="text-dark" asp-area="" asp-controller="Cliente" asp-action="Index">Clientes</a></h3></li>
+  <li class="list-group-item"><a class="text-dark" asp-area="" asp-controller="Cliente" asp-action="Registrar">Registrar</a></li>
 </ul>
 
 
